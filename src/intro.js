@@ -12,3 +12,13 @@ export function fizzBuzz(n) {
   if (n % 5 === 0) return 'Buzz';
   return n.toString();
 }
+
+// Calculate average of numbers in an array
+export const average = ( numbers ) => {
+  if( !numbers || !numbers.length ) return NaN
+
+  return numbers.reduce( ( sum, currVal ) => sum + currVal, 0 ) / numbers.length
+}
+
+export const factorial = ( n ) => {
+}
