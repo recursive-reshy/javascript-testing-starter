@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { max, fizzBuzz, average } from '../src/intro'
+import { max, fizzBuzz, average, sum } from '../src/intro'
 
 describe( 'max', () => {
   it( 'should return the first argument if it is greater', () => {
@@ -39,5 +39,15 @@ describe( 'average', () => {
 
   it( 'should return the average of numbers in an array', () => {
     expect( average( [ 1, 2, 3 ] ) ).toBe( 2 )
+  } )
+} )
+
+describe( 'sum', () => {
+  it( 'should return NaN if the array is empty', () => {
+    expect( sum( [] ) ).toBe( NaN )
+  } )
+
+  it( 'should retrun the sum of numbers in the array', () => {
+    expect( sum( [ 1, 2 ] ) ).toBe( 3 )
   } )
 } )
